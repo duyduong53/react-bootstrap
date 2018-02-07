@@ -291,6 +291,7 @@ class Carousel extends React.Component {
           key="prev"
           className={classNames(controlClassName, 'left')}
           onClick={this.handlePrev}
+          target="_self"
         >
           {prevIcon}
           {prevLabel && <span className="sr-only">{prevLabel}</span>}
@@ -302,6 +303,7 @@ class Carousel extends React.Component {
           key="next"
           className={classNames(controlClassName, 'right')}
           onClick={this.handleNext}
+          target="_self"
         >
           {nextIcon}
           {nextLabel && <span className="sr-only">{nextLabel}</span>}
